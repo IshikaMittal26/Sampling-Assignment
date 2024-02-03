@@ -4,21 +4,21 @@ In this Python script, we implemented diverse sampling methods on a credit card 
 
 We employed the following 5 sampling techniques:
 
-Random Under Sampler (Designated as Sampling1)
-Random Over Sampler (Designated as Sampling2)
-TOMEK links (Designated as Sampling4)
-SMOTE (Designated as Sampling3)
-Near Miss (Designated as Sampling5)
+1.Random Under Sampler (Designated as Sampling1)
+2.Random Over Sampler (Designated as Sampling2)
+3.TOMEK links (Designated as Sampling4)
+4.SMOTE (Designated as Sampling3)
+5.Near Miss (Designated as Sampling5)
 
 The Sample size was calculates using the following formula: n = Z^2(p(1 – p)/m^2) where: n = sample size Z = z-value (for 98% confidence interval, Z = 4) p = proportion of the minority class (taken as 0.5 for a balanced dataset) m = margin of error (taken as 0.1 for a sample size of 1000)
 
 Following 5 models were applied on the sampled dataset:
 
-Decision Tree Classifier (Designated as M1)
-Random Forest Classifier (Designated as M2)
-KMeans (Designated as M3)
-Support Vector Classifier (SVC) (Designated as M4)
-Extra Tree Classifier (Designated as M5)
+1.Decision Tree Classifier (Designated as M1)
+2.Random Forest Classifier (Designated as M2)
+3.KMeans (Designated as M3)
+4.Support Vector Classifier (SVC) (Designated as M4)
+5.Extra Tree Classifier (Designated as M5)
 Upon executing the code, we obtained the following results. The table cells represent the accuracy of each applied model using the corresponding sampling technique.
 
 # Output  
@@ -34,9 +34,10 @@ Upon executing the code, we obtained the following results. The table cells repr
 
 From the table, it is evident that the highest accuracy of 99.57% was achieved with the following combinations:
 
-Decision Tree with Random Over Sampler, SMOTE, and TOMEK
-Random Forest Classifier with Random Over Sampler, SMOTE, and TOMEK
-KMeans Classifier with Random Over Sampler, SMOTE, and TOMEK
-Support Vector Classifier with Random Over Sampler, SMOTE, and TOMEK
-Extra Tree Classifier with Random Over Sampler, SMOTE, and TOMEK
+1.Decision Tree with Random Over Sampler, SMOTE, and TOMEK
+2.Random Forest Classifier with Random Over Sampler, SMOTE, and TOMEK
+3.KMeans Classifier with Random Over Sampler, SMOTE, and TOMEK
+4.Support Vector Classifier with Random Over Sampler, SMOTE, and TOMEK
+5.Extra Tree Classifier with Random Over Sampler, SMOTE, and TOMEK
+
 Hence, the sampling models Random Over Sampler, SMOTE, and TOMEK demonstrate superior performance.
